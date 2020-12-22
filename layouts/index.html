@@ -37,12 +37,8 @@
   </section>
 
   <section id="writing">
-<<<<<<< HEAD
-    <span class="h1"><a href="{{ .Site.Params.mainSection | absURL }}">Writings</a></span>
-=======
     <!-- TODO: use built in mainSections parameter https://gohugo.io/functions/where/#mainsections -->
     <span class="h1"><a href="{{ .Site.Params.mainSection | relURL }}">Writings</a></span>
->>>>>>> 1358e64bc65dc13b72dbff1a2421b925193cde40
     {{ if (and (and (isset .Site.Params "tagsoverview") (eq .Site.Params.tagsOverview true)) (gt (len .Site.Taxonomies.tags) 0)) }}
     <span class="h2">Topics</span>
     <span class="widget tagcloud">
